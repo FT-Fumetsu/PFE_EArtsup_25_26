@@ -68,8 +68,6 @@ Installation :
 
 4. Vous vous retrouverez sur cet écran <img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/29a73c70-7c5e-4b77-8373-cdcdb43396be" />
 
-Traduit avec DeepL.com (version gratuite)
-
 Comment l'utiliser :
 Pour ajouter des fonctionnalités au projet, créez une branche à partir de la branche de développement. Ensuite, lorsque vous souhaitez l'ajouter au projet principal, créez une PullRequest avec au moins 2 collaborateurs assignés à celle-ci. Attendez leurs commentaires. Veillez à informer la personne à qui vous avez attribué votre pull request.
 Si vous êtes affecté à une pull request, veillez à la réviser dès que possible ! Sinon, la personne qui a attribué la pull request sera bloquée pour une durée indéterminée.
