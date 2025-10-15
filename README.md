@@ -17,6 +17,17 @@ Install [UnrealEngine](https://www.unrealengine.com/en-US/download) and download
 
 5. Go to where you put the project and click on the `PFE_EArtsup_25_26` unreal project. Or go in your files and click on the project directly.
 
+### If Fork doesn't work:
+1. Download [GitHubDesktop](https://desktop.github.com/download/)
+
+2. Click on `file` at the top of the screen
+
+3. Then `clone repository` and add this link
+`https://github.com/FT-Fumetsu/PFE_EArtsup_25_26.git`
+
+4. You will be on this screen <img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/29a73c70-7c5e-4b77-8373-cdcdb43396be" />
+
+
 ### How to use it:
 To add features in the project, create a branch on the base of the develop branch. Then, when you want to add it in the main Project, make a PullRequest with at least 2 collaborators asigned to it. Wait until their reviews. Make sure to notify the person that you asigned it them to your pull request.
 If you're asigned to a pull request, make sure to review them ASAP ! Either the person who asigned the pull request will be blocked for an undetermined duration.
@@ -36,16 +47,28 @@ Pré-requis :
 Installez [UnrealEngine](https://www.unrealengine.com/en-US/download) et téléchargez la version 5.6.1.
 
 Installation :
-Clonez le dépôt sur Fork
+1. Clonez le dépôt sur Fork
 `https://github.com/FT-Fumetsu/PFE_EArtsup_25_26.git`
 
-Ouvrez `Unreal Project Browser`
+2. Ouvrez `Unreal Project Browser`
 
-Allez dans `Recent Projects`
+3. Allez dans `Recent Projects`
 
-Cliquez sur `Browse`
+4. Cliquez sur `Browse`
 
-Allez à l'endroit où vous avez placé le projet et cliquez sur le projet Unreal `PFE_EArtsup_25_26`. Vous pouvez également aller dans vos fichiers et cliquer directement sur le projet.
+5. Allez à l'endroit où vous avez placé le projet et cliquez sur le projet Unreal `PFE_EArtsup_25_26`. Vous pouvez également aller dans vos fichiers et cliquer directement sur le projet.
+
+### Si Fork ne fonctionne pas :
+1. Téléchargez [GitHubDesktop](https://desktop.github.com/download/)
+
+2. Cliquez sur « file» en haut de l'écran
+
+3. Ensuite, « clonez le repository» et ajoutez ce lien
+`https://github.com/FT-Fumetsu/PFE_EArtsup_25_26.git`
+
+4. Vous vous retrouverez sur cet écran <img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/29a73c70-7c5e-4b77-8373-cdcdb43396be" />
+
+Traduit avec DeepL.com (version gratuite)
 
 Comment l'utiliser :
 Pour ajouter des fonctionnalités au projet, créez une branche à partir de la branche de développement. Ensuite, lorsque vous souhaitez l'ajouter au projet principal, créez une PullRequest avec au moins 2 collaborateurs assignés à celle-ci. Attendez leurs commentaires. Veillez à informer la personne à qui vous avez attribué votre pull request.
