@@ -17,6 +17,8 @@ Install [UnrealEngine](https://www.unrealengine.com/en-US/download) and download
 
 5. Go to where you put the project and click on the `PFE_EArtsup_25_26` unreal project. Or go in your files and click on the project directly.
 
+[Video for Fork](https://fromsmash.com/Video-pour-utiliser-Fork)
+
 ### If Fork doesn't work:
 1. Download [GitHubDesktop](https://desktop.github.com/download/)
 
@@ -27,6 +29,7 @@ Install [UnrealEngine](https://www.unrealengine.com/en-US/download) and download
 
 4. You will be on this screen <img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/29a73c70-7c5e-4b77-8373-cdcdb43396be" />
 
+[Video for Github Desktop](https://fromsmash.com/Video-pour-utiliser-Github-Desktop)
 
 ### How to use it:
 To add features in the project, create a branch on the base of the develop branch. Then, when you want to add it in the main Project, make a PullRequest with at least 2 collaborators asigned to it. Wait until their reviews. Make sure to notify the person that you asigned it them to your pull request.
@@ -58,6 +61,8 @@ Installation :
 
 5. Allez à l'endroit où vous avez placé le projet et cliquez sur le projet Unreal `PFE_EArtsup_25_26`. Vous pouvez également aller dans vos fichiers et cliquer directement sur le projet.
 
+[Video pour Fork](https://fromsmash.com/Video-pour-utiliser-Fork)
+
 ### Si Fork ne fonctionne pas :
 1. Téléchargez [GitHubDesktop](https://desktop.github.com/download/)
 
@@ -67,6 +72,8 @@ Installation :
 `https://github.com/FT-Fumetsu/PFE_EArtsup_25_26.git`
 
 4. Vous vous retrouverez sur cet écran <img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/29a73c70-7c5e-4b77-8373-cdcdb43396be" />
+
+[Video pour Github Desktop](https://fromsmash.com/Video-pour-utiliser-Github-Desktop)
 
 Comment l'utiliser :
 Pour ajouter des fonctionnalités au projet, créez une branche à partir de la branche de développement. Ensuite, lorsque vous souhaitez l'ajouter au projet principal, créez une PullRequest avec au moins 2 collaborateurs assignés à celle-ci. Attendez leurs commentaires. Veillez à informer la personne à qui vous avez attribué votre pull request.
