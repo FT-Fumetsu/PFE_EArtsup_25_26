@@ -41,7 +41,7 @@ When you pushed your commits on your branch, go to github and either:
 
 2. If you don't heve the popup, go to the PullRequest window and click on `create a pull request`. Select base: `your branch` compare: `develop` then create the pull request.
 
-Then, when you created you pull request, you need to assign at least two persons to your pull request in the `reviewers` section. And click on `assign yourself` in the `Assignees` section. Then, create your pull request 👍 A video of how to do it will be available soon if not available now on the [discord](https://discord.gg/QqftxTUd).
+Then, when you created you pull request, you need to assign at least two persons to your pull request in the `reviewers` section and one of them MUST BE either @FT-Fumetsu (me), @Meowzzss (Anne-So) or @jadersse (Jade). And click on `assign yourself` in the `Assignees` section. Then, create your pull request 👍 A video of how to do it will be available soon if not available now on the [discord](https://discord.gg/QqftxTUd).
 
 [Video for pull requests](https://fromsmash.com/Videos-pour-pull-request)
 
@@ -81,12 +81,12 @@ Comment l'utiliser :
 Pour ajouter des fonctionnalités au projet, créez une branche à partir de la branche de développement. Ensuite, lorsque vous souhaitez l'ajouter au projet principal, créez une PullRequest avec au moins 2 collaborateurs assignés à celle-ci. Attendez leurs commentaires. Veillez à informer la personne à qui vous avez attribué votre pull request.
 Si vous êtes affecté à une pull request, veillez à la réviser dès que possible ! Sinon, la personne qui a attribué la pull request sera bloquée pour une durée indéterminée.
 
-Comment créer une PullRequest :
+Comment créer une PullRequest : 
 Une fois que vous avez push vos commits sur votre branche, rendez-vous sur GitHub et :
 Allez dans le dépôt et une popup s'affichera en haut de votre écran avec un bouton create a pull request. Vérifiez que votre pull request provient de votre branche vers la branche develop.
 
 Si vous n'avez pas la popup, allez dans la fenêtre PullRequest et cliquez sur create pull request. Sélectionnez base : votre branche compare : dévelop, puis créez la pull request.
 
-Une fois votre pull request créée, vous devez assigner au moins deux personnes à votre pull request dans la section reviewers. Cliquez ensuite sur assign yourself dans la section Assignees. Créez ensuite votre pull request 👍 Une vidéo expliquant comment procéder sera bientôt disponible, si ce n'est déjà le cas, sur [discord](https://discord.gg/QqftxTUd).
+Une fois votre pull request créée, vous devez assigner au moins deux personnes à votre pull request dans la section reviewers et au moins l'une de ces personnes doit être soit @Ft-Fumetsu (moi), soit @Meowzzss (Anne-So) ou @jadersse (Jade). Cliquez ensuite sur assign yourself dans la section Assignees. Créez ensuite votre pull request 👍 Une vidéo expliquant comment procéder sera bientôt disponible, si ce n'est déjà le cas, sur [discord](https://discord.gg/QqftxTUd).
 
 [Video pour pull requests](https://fromsmash.com/Videos-pour-pull-request)
