@@ -7,4 +7,6 @@ UBasicAttributeSet::UBasicAttributeSet()
 {
 	Health = 100.f;
 	MaxHealth = 100.f;
+	Experience = 0.f;
+	Levels = 0.f;
 }
