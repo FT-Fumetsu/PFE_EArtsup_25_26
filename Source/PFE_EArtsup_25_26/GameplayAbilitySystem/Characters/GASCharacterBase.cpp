@@ -5,6 +5,7 @@
 
 #include "Components/CapsuleComponent.h"
 #include "GameFramework/CharacterMovementComponent.h"
+#include "PFE_EArtsup_25_26/GameplayAbilitySystem/AttributeSets/BasicAttributeSet.h"
 
 // Sets default values
 AGASCharacterBase::AGASCharacterBase()
@@ -34,6 +35,9 @@ AGASCharacterBase::AGASCharacterBase()
 	GetCharacterMovement()->MinAnalogWalkSpeed = 20.f;
 	GetCharacterMovement()->BrakingDecelerationWalking = 2000.f;
 	GetCharacterMovement()->BrakingDecelerationFalling = 1500.f;
+	
+	// Add the basic attribute set
+	BasicAttributeSet = CreateDefaultSubobject<UBasicAttributeSet>(TEXT("BasicAttributeeSet"));
 }
 
 // Called when the game starts or when spawned
