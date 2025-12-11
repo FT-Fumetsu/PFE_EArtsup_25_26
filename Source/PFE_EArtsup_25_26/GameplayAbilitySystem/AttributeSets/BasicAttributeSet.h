@@ -33,6 +33,16 @@ public:
     ATTRIBUTE_ACCESSORS_BASIC(UBasicAttributeSet, Experience);
 	
 	UPROPERTY(BlueprintReadOnly, Category = "Attributes")
+	FGameplayAttributeData MaxExperience;
+	ATTRIBUTE_ACCESSORS_BASIC(UBasicAttributeSet, MaxExperience);
+	
+	UPROPERTY(BlueprintReadOnly, Category = "Attributes")
 	FGameplayAttributeData Levels;
 	ATTRIBUTE_ACCESSORS_BASIC(UBasicAttributeSet, Levels);
+	
+public:
+	
+	virtual void PreAttributeChange(const FGameplayAttribute& Attribute, float& NewValue) override;
+	
+	virtual void PostGameplayEffectExecute(const FGameplayEffectModCallbackData& Data) override;
 };
