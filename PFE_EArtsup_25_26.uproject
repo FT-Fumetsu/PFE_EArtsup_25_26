@@ -9,7 +9,8 @@
 			"Type": "Runtime",
 			"LoadingPhase": "Default",
 			"AdditionalDependencies": [
-				"Engine"
+				"Engine",
+				"GameplayAbilities"
 			]
 		}
 	],
@@ -27,12 +28,8 @@
 		},
 		{
 			"Name": "FastNoiseGenerator",
-			"Enabled": true,
+			"Enabled": false,
 			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/527737f42da544e9abf8607a40495fbd"
-		},
-		{
-			"Name": "PCG",
-			"Enabled": true
 		},
 		{
 			"Name": "GameplayAbilities",
