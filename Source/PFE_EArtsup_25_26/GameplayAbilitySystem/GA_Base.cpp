@@ -18,3 +18,8 @@ FText UGA_Base::GetBasicName() const
 	}
 	return FText::FromString(ClassName);
 }
+
+UGA_Base::UGA_Base()
+{
+	ActivationOwnedTags.AddTag(FGameplayTag::RequestGameplayTag(FName("GameplayAbility.Active")));
+}

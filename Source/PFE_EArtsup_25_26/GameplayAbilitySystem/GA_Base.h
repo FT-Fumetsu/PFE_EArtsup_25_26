@@ -16,6 +16,9 @@ class PFE_EARTSUP_25_26_API UGA_Base : public UGameplayAbility
 	GENERATED_BODY()
 	
 public: 
+	
+	UGA_Base();
+	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "UI")
 	FText AbilityDisplayName;
 
