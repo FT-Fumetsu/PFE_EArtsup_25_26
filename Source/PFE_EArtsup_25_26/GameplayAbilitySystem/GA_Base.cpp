@@ -22,4 +22,5 @@ FText UGA_Base::GetBasicName() const
 UGA_Base::UGA_Base()
 {
 	ActivationOwnedTags.AddTag(FGameplayTag::RequestGameplayTag(FName("GameplayAbility.Active")));
+	ActivationBlockedTags.AddTag(FGameplayTag::RequestGameplayTag(FName("State.Dead")));
 }
