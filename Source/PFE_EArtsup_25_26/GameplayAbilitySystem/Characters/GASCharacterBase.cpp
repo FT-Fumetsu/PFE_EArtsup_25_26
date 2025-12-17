@@ -4,7 +4,9 @@
 #include "GASCharacterBase.h"
 
 #include "Components/CapsuleComponent.h"
+#include "AbilitySystemBlueprintLibrary.h"
 #include "GameFramework/CharacterMovementComponent.h"
+#include "PFE_EArtsup_25_26/GameplayAbilitySystem/PfeAbilitySystemComponent.h"
 #include "PFE_EArtsup_25_26/GameplayAbilitySystem/AttributeSets/BasicAttributeSet.h"
 
 // Sets default values
@@ -14,7 +16,7 @@ AGASCharacterBase::AGASCharacterBase()
 	PrimaryActorTick.bCanEverTick = true;
 	
 	// Create Ability System Component
-	AbilitySystemComponent = CreateDefaultSubobject<UAbilitySystemComponent>(TEXT("AbilitySystemComponent"));
+	AbilitySystemComponent = CreateDefaultSubobject<UPfeAbilitySystemComponent>(TEXT("AbilitySystemComponent"));
 	AbilitySystemComponent->SetIsReplicated(false);
 	
 	// Set size for collision capsule
@@ -38,6 +40,9 @@ AGASCharacterBase::AGASCharacterBase()
 	
 	// Add the basic attribute set
 	BasicAttributeSet = CreateDefaultSubobject<UBasicAttributeSet>(TEXT("BasicAttributeeSet"));
+	
+	AbilitySystemComponent->RegisterGameplayTagEvent(FGameplayTag::RequestGameplayTag("State.Dead"))
+		.AddUObject(this, &AGASCharacterBase::OnDeadTagChanged);
 }
 
 // Called when the game starts or when spawned
@@ -73,6 +78,7 @@ void AGASCharacterBase::PossessedBy(AController* NewController)
 	if (AbilitySystemComponent)
 	{
 		AbilitySystemComponent->InitAbilityActorInfo(this, this);
+		GrantAbilities(StartingAbilities);
 	}
 }
 
@@ -83,5 +89,72 @@ void AGASCharacterBase::OnRep_PlayerState()
 	if (AbilitySystemComponent)
 	{
 		AbilitySystemComponent->InitAbilityActorInfo(this, this);
+	}
+}
+
+TArray<FGameplayAbilitySpecHandle> AGASCharacterBase::GrantAbilities(
+	TArray<TSubclassOf<UGameplayAbility>> AbilitiesToGrant)
+{
+	if (!AbilitySystemComponent)
+	{
+		return TArray<FGameplayAbilitySpecHandle>();
+	}
+	
+	TArray<FGameplayAbilitySpecHandle> AbilityHandles;
+	
+	for (TSubclassOf<UGameplayAbility> Ability : AbilitiesToGrant)
+	{
+		FGameplayAbilitySpecHandle SpecHandle = AbilitySystemComponent->GiveAbility(FGameplayAbilitySpec(
+			Ability, 1, -1, this
+			));
+		AbilityHandles.Add(SpecHandle);
+	}
+	
+	SendAbilitiesChangedEvent();
+	return AbilityHandles;
+}
+
+void AGASCharacterBase::RemoveAbilities(TArray<FGameplayAbilitySpecHandle> AbilityHandlesToRemove)
+{
+	if (!AbilitySystemComponent)
+	{
+		return;
+	}
+	
+	for (FGameplayAbilitySpecHandle AbilityHandle : AbilityHandlesToRemove)
+	{
+		AbilitySystemComponent->ClearAbility(AbilityHandle);
+	}
+	
+	SendAbilitiesChangedEvent();
+}
+
+void AGASCharacterBase::SendAbilitiesChangedEvent()
+{
+	FGameplayEventData EventData;
+	EventData.EventTag = FGameplayTag::RequestGameplayTag(FName("Event.Abilities.Changed"));
+	EventData.Instigator = this;
+	EventData.Target = this;
+	
+	UAbilitySystemBlueprintLibrary::SendGameplayEventToActor(this, EventData.EventTag, EventData);
+}
+
+void AGASCharacterBase::HandleDeath_Implementation()
+{
+	GetMesh()->SetSimulatePhysics(true);
+	GetMesh()->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
+	GetCapsuleComponent()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+	GetCharacterMovement()->DisableMovement();
+	
+	FVector Impulse = GetActorForwardVector() * -20000;
+	Impulse.Z = 15000;
+	GetMesh()->AddImpulseAtLocation(Impulse, GetActorLocation());
+}
+
+void AGASCharacterBase::OnDeadTagChanged(const FGameplayTag CallbackTag, int32 NewCount)
+{
+	if (NewCount > 0)
+	{
+		HandleDeath();
 	}
 }

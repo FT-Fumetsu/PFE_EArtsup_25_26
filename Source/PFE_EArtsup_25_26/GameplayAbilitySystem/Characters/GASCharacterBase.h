@@ -5,7 +5,9 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
 #include "AbilitySystemInterface.h"
-// #include "AbilitySystemComponent.h"
+#include "AbilitySystemComponent.h"
+#include "GameplayTagContainer.h"
+#include "GameplayAbilitySpec.h"
 #include "GASCharacterBase.generated.h"
 
 UCLASS()
@@ -25,12 +27,21 @@ public:
 	class UBasicAttributeSet* BasicAttributeSet;
 
 protected:
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "AbilitySystem")
+	TArray<TSubclassOf<UGameplayAbility>> StartingAbilities;
+	
+protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 	
 	virtual void PossessedBy(AController* NewController) override;
 	
 	virtual void OnRep_PlayerState() override;
+	
+	virtual void OnDeadTagChanged(const FGameplayTag CallbackTag, int32 NewCount);
+	
+	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "Damage")
+	void HandleDeath();
 
 public:	
 	// Called every frame
@@ -40,4 +51,13 @@ public:
 	virtual void SetupPlayerInputComponent(UInputComponent* PlayerInputComponent) override;
 	
 	virtual UAbilitySystemComponent* GetAbilitySystemComponent() const override;
+	
+	UFUNCTION(BlueprintCallable, Category = "AbilitySystem")
+	TArray<FGameplayAbilitySpecHandle> GrantAbilities(TArray<TSubclassOf<UGameplayAbility>> AbilitiesToGrant);
+	
+	UFUNCTION(BlueprintCallable, Category = "AbilitySystem")
+	void RemoveAbilities(TArray<FGameplayAbilitySpecHandle> AbilityHandlesToRemove);
+	
+	UFUNCTION(BlueprintCallable, Category = "AbilitySystem")
+	void SendAbilitiesChangedEvent();
 };
