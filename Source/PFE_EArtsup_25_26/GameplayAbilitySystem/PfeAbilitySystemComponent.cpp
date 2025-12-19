@@ -34,3 +34,13 @@ void UPfeAbilitySystemComponent::TickComponent(float DeltaTime, ELevelTick TickT
 	// ...
 }
 
+void UPfeAbilitySystemComponent::BP_AbilityLocalInputPressed(int32 InputID)
+{
+	AbilityLocalInputPressed(InputID);
+}
+
+void UPfeAbilitySystemComponent::BP_AbilityLocalInputReleased(int32 InputID)
+{
+	AbilityLocalInputReleased(InputID);
+}
+

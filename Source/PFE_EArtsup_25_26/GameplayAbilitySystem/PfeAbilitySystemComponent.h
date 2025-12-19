@@ -24,4 +24,10 @@ public:
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType,
 	                           FActorComponentTickFunction* ThisTickFunction) override;
+	
+	UFUNCTION(BlueprintCallable, Category="GAS|Input")
+	void BP_AbilityLocalInputPressed(int32 InputID);
+
+	UFUNCTION(BlueprintCallable, Category="GAS|Input")
+	void BP_AbilityLocalInputReleased(int32 InputID);
 };

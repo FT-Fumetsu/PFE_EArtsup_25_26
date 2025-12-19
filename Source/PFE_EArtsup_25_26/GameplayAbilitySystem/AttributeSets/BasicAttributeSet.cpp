@@ -11,6 +11,8 @@ UBasicAttributeSet::UBasicAttributeSet()
 	Experience = 0.f;
 	MaxExperience = 100.f;
 	Levels = 0.f;
+	ChargeTime = 0.f;
+	MaxChargeTime = 2.f;
 }
 
 void UBasicAttributeSet::PreAttributeChange(const FGameplayAttribute& Attribute, float& NewValue)
