@@ -25,7 +25,10 @@ public:
 	
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "AbilitySystem")
 	class UBasicAttributeSet* BasicAttributeSet;
-
+	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Weapons")
+	bool hasWeaponEquipped = false;
+	
 protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "AbilitySystem")
 	TArray<TSubclassOf<UGameplayAbility>> StartingAbilities;

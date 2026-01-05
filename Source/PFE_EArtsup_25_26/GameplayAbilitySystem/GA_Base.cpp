@@ -24,3 +24,13 @@ UGA_Base::UGA_Base()
 	ActivationOwnedTags.AddTag(FGameplayTag::RequestGameplayTag(FName("GameplayAbility.Active")));
 	ActivationBlockedTags.AddTag(FGameplayTag::RequestGameplayTag(FName("State.Dead")));
 }
+
+bool UGA_Base::HasPc() const
+{
+	const APawn* PawnObject = Cast<APawn>(GetOwningActorFromActorInfo());
+	if (!PawnObject)
+	{
+		return false;
+	}
+	return PawnObject->GetController()->IsA<APlayerController>();
+}
