@@ -35,4 +35,8 @@ public:
 	// Utilitaire : fallback pour obtenir un nom lisible (peut être utilisé en C++)
 	UFUNCTION(BlueprintCallable, Category="UI")
 	FText GetBasicName() const;
+	
+private:
+	UFUNCTION(BlueprintCallable, Category = "Helpers")
+	bool HasPc() const;
 };
