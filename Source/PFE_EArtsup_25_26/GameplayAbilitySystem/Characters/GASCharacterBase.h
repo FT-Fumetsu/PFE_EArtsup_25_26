@@ -63,4 +63,7 @@ public:
 	
 	UFUNCTION(BlueprintCallable, Category = "AbilitySystem")
 	void SendAbilitiesChangedEvent();
+	
+	UFUNCTION(BlueprintCallable, Category = "AbilitySystem")
+	void LoadAttributes(TMap<FGameplayAttribute, float> SavedAttributesMap);
 };

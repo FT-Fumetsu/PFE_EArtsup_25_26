@@ -158,3 +158,13 @@ void AGASCharacterBase::OnDeadTagChanged(const FGameplayTag CallbackTag, int32 N
 		HandleDeath();
 	}
 }
+
+void AGASCharacterBase::LoadAttributes(TMap<FGameplayAttribute, float> SavedAttributesMap)
+{
+	for (const TPair<FGameplayAttribute, float>& Pair : SavedAttributesMap)
+	{
+		FGameplayAttribute Attribute = Pair.Key;
+		float Value = Pair.Value;
+		AbilitySystemComponent->ApplyModToAttribute(Attribute, EGameplayModOp::Override, Value);
+	}
+}
