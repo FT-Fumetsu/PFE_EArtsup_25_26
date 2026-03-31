@@ -2,6 +2,9 @@
 
 
 #include "BasicAttributeSet.h"
+#include "AbilitySystemComponent.h"
+#include "GameplayTagContainer.h"
+#include "GameplayEffectTypes.h"
 #include "GameplayEffectExtension.h"
 
 UBasicAttributeSet::UBasicAttributeSet()
@@ -10,9 +13,7 @@ UBasicAttributeSet::UBasicAttributeSet()
 	MaxHealth = 100.f;
 	Experience = 0.f;
 	MaxExperience = 100.f;
-	Levels = 0.f;
-	ChargeTime = 0.f;
-	MaxChargeTime = 2.f;
+	Levels = 0;
 }
 
 void UBasicAttributeSet::PreAttributeChange(const FGameplayAttribute& Attribute, float& NewValue)
@@ -24,7 +25,7 @@ void UBasicAttributeSet::PreAttributeChange(const FGameplayAttribute& Attribute,
 		NewValue = FMath::Clamp(NewValue, 0.f, GetMaxHealth());
 	} else if (Attribute == GetExperienceAttribute())
 	{
-		NewValue = FMath::Clamp(NewValue, 0.f, GetMaxExperience());
+		NewValue = FMath::Max(NewValue, 0.f);
 	}
 	else if (Attribute == GetLevelsAttribute())
 	{
@@ -48,7 +49,32 @@ void UBasicAttributeSet::PostGameplayEffectExecute(const FGameplayEffectModCallb
 		}
 	} else if (Data.EvaluatedData.Attribute == GetExperienceAttribute())
 	{
-		SetExperience(GetExperience());
+		float CurrentXP = GetExperience();
+		float MaxXP = GetMaxExperience();
+		
+		int32 CurrentLevel = GetLevels();
+		
+		while (CurrentXP >= MaxXP && MaxXP > 0.f)
+		{
+			CurrentXP -= MaxXP;
+			CurrentLevel += 1;
+			
+			if (UAbilitySystemComponent* ASC = GetOwningAbilitySystemComponent())
+			{
+				FGameplayEventData Payload;
+				Payload.EventTag = FGameplayTag::RequestGameplayTag("Event.LevelUp");
+				Payload.EventMagnitude = CurrentLevel;
+
+				ASC->HandleGameplayEvent(Payload.EventTag, &Payload);
+			}
+			
+			MaxXP = 100.f + 20 * CurrentLevel;
+		}
+		
+		SetExperience(CurrentXP);
+		SetMaxExperience(MaxXP);
+		SetLevels(CurrentLevel);
+		
 	} else if (Data.EvaluatedData.Attribute == GetLevelsAttribute())
 	{
 		SetLevels(GetLevels());
