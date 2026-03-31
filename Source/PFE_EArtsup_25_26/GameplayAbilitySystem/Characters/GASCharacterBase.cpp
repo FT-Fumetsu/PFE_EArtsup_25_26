@@ -50,6 +50,10 @@ void AGASCharacterBase::BeginPlay()
 {
 	Super::BeginPlay();
 	
+	if(AbilitySystemComponent)
+	{
+		AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(UBasicAttributeSet::GetRunSpeedAttribute()).AddUObject(this, &AGASCharacterBase::OnRunSpeedChanged);
+	}
 }
 
 // Called every frame
@@ -159,7 +163,7 @@ void AGASCharacterBase::OnDeadTagChanged(const FGameplayTag CallbackTag, int32 N
 	}
 }
 
-void AGASCharacterBase::LoadAttributes(TMap<FGameplayAttribute, float> SavedAttributesMap)
+void AGASCharacterBase::LoadAttributes(TMap<FGameplayAttribute, float> SavedAttributesMap) const
 {
 	for (const TPair<FGameplayAttribute, float>& Pair : SavedAttributesMap)
 	{
@@ -167,4 +171,10 @@ void AGASCharacterBase::LoadAttributes(TMap<FGameplayAttribute, float> SavedAttr
 		float Value = Pair.Value;
 		AbilitySystemComponent->ApplyModToAttribute(Attribute, EGameplayModOp::Override, Value);
 	}
+}
+
+void AGASCharacterBase::OnRunSpeedChanged(const FOnAttributeChangeData& Data) const
+{
+	float NewRunSpeed = Data.NewValue;
+	GetCharacterMovement()->MaxWalkSpeed = NewRunSpeed;
 }

@@ -28,6 +28,8 @@ public:
 	FGameplayAttributeData MaxHealth;
 	ATTRIBUTE_ACCESSORS_BASIC(UBasicAttributeSet, MaxHealth);
 	
+	// Experience Attributes
+	
 	UPROPERTY(BlueprintReadOnly, Category = "Attributes")
     FGameplayAttributeData Experience;
     ATTRIBUTE_ACCESSORS_BASIC(UBasicAttributeSet, Experience);
@@ -39,6 +41,12 @@ public:
 	UPROPERTY(BlueprintReadOnly, Category = "Attributes")
 	FGameplayAttributeData Levels;
 	ATTRIBUTE_ACCESSORS_BASIC(UBasicAttributeSet, Levels);
+	
+	// Stats attributes
+	
+	UPROPERTY(BlueprintReadOnly, Category = "Attributes")
+	FGameplayAttributeData RunSpeed;
+	ATTRIBUTE_ACCESSORS_BASIC(UBasicAttributeSet, RunSpeed);
 	
 public:
 	

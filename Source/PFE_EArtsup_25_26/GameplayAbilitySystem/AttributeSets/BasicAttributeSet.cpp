@@ -14,6 +14,7 @@ UBasicAttributeSet::UBasicAttributeSet()
 	Experience = 0.f;
 	MaxExperience = 100.f;
 	Levels = 0;
+	RunSpeed = 500.f;
 }
 
 void UBasicAttributeSet::PreAttributeChange(const FGameplayAttribute& Attribute, float& NewValue)
@@ -28,6 +29,10 @@ void UBasicAttributeSet::PreAttributeChange(const FGameplayAttribute& Attribute,
 		NewValue = FMath::Max(NewValue, 0.f);
 	}
 	else if (Attribute == GetLevelsAttribute())
+	{
+		NewValue = FMath::Max(NewValue, 0.f);
+	}
+	else if (Attribute == GetRunSpeedAttribute())
 	{
 		NewValue = FMath::Max(NewValue, 0.f);
 	}
@@ -78,6 +83,9 @@ void UBasicAttributeSet::PostGameplayEffectExecute(const FGameplayEffectModCallb
 	} else if (Data.EvaluatedData.Attribute == GetLevelsAttribute())
 	{
 		SetLevels(GetLevels());
+	} else if (Data.EvaluatedData.Attribute == GetRunSpeedAttribute())
+	{
+		SetRunSpeed(GetRunSpeed());
 	}
 }
 

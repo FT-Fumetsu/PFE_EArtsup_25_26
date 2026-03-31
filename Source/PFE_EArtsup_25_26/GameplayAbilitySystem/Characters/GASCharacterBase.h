@@ -65,5 +65,7 @@ public:
 	void SendAbilitiesChangedEvent();
 	
 	UFUNCTION(BlueprintCallable, Category = "AbilitySystem")
-	void LoadAttributes(TMap<FGameplayAttribute, float> SavedAttributesMap);
+	void LoadAttributes(TMap<FGameplayAttribute, float> SavedAttributesMap) const;
+	
+	void OnRunSpeedChanged(const FOnAttributeChangeData& Data) const;
 };
