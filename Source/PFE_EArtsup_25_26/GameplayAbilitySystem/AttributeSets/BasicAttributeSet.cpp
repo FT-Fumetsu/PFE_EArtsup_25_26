@@ -63,7 +63,7 @@ void UBasicAttributeSet::PostGameplayEffectExecute(const FGameplayEffectModCallb
 			{
 				FGameplayEventData Payload;
 				Payload.EventTag = FGameplayTag::RequestGameplayTag("Event.LevelUp");
-				Payload.EventMagnitude = CurrentLevel;
+				//Payload.EventMagnitude = CurrentLevel;
 
 				ASC->HandleGameplayEvent(Payload.EventTag, &Payload);
 			}
