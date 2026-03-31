@@ -40,14 +40,6 @@ public:
 	FGameplayAttributeData Levels;
 	ATTRIBUTE_ACCESSORS_BASIC(UBasicAttributeSet, Levels);
 	
-	UPROPERTY(BlueprintReadOnly, Category = "Attributes")
-	FGameplayAttributeData ChargeTime;
-	ATTRIBUTE_ACCESSORS_BASIC(UBasicAttributeSet, ChargeTime);
-	
-	UPROPERTY(BlueprintReadOnly, Category = "Attributes")
-	FGameplayAttributeData MaxChargeTime;
-	ATTRIBUTE_ACCESSORS_BASIC(UBasicAttributeSet, MaxChargeTime);
-	
 public:
 	
 	virtual void PreAttributeChange(const FGameplayAttribute& Attribute, float& NewValue) override;
