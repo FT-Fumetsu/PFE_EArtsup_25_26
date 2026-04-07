@@ -21,9 +21,9 @@ UBasicAttributeSet::UBasicAttributeSet()
 	MinArmor = -50.f;
 	MaxArmor = 50.f;
 	DashDistance = 600.f;
-	DashTime = 1.f;
-	MinDashTime = 0.1f;
-	DashCooldown = 2.f;
+	DashTime = .5f;
+	MinDashTime = 0.01f;
+	DashCooldown = 3.f;
 	MinDashCooldown = 0.5f;
 }
 
