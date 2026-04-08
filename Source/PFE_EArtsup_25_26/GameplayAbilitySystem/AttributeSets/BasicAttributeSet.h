@@ -90,6 +90,14 @@ public:
 	FGameplayAttributeData MinDashCooldown;
 	ATTRIBUTE_ACCESSORS_BASIC(UBasicAttributeSet, MinDashCooldown);
 	
+	UPROPERTY(BlueprintReadOnly, Category = "Attributes/Dash")
+	FGameplayAttributeData DashDamage;
+	ATTRIBUTE_ACCESSORS_BASIC(UBasicAttributeSet, DashDamage);
+	
+	UPROPERTY(BlueprintReadOnly, Category = "Attributes/Dash")
+	FGameplayAttributeData DashKnockback;
+	ATTRIBUTE_ACCESSORS_BASIC(UBasicAttributeSet, DashKnockback);
+	
 public:
 	
 	virtual void PreAttributeChange(const FGameplayAttribute& Attribute, float& NewValue) override;
