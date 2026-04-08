@@ -25,6 +25,8 @@ UBasicAttributeSet::UBasicAttributeSet()
 	MinDashTime = 0.01f;
 	DashCooldown = 3.f;
 	MinDashCooldown = 0.5f;
+	DashDamage = 0.f;
+	DashKnockback = 0.f;
 }
 
 void UBasicAttributeSet::PreAttributeChange(const FGameplayAttribute& Attribute, float& NewValue)
@@ -55,6 +57,10 @@ void UBasicAttributeSet::PreAttributeChange(const FGameplayAttribute& Attribute,
 	{
 		NewValue = FMath::Clamp(NewValue, GetMinArmor(), GetMaxArmor());
 	}
+	else if (Attribute == GetDashDistanceAttribute())
+	{
+		NewValue = FMath::Max(NewValue, 0.f);
+	}
 	else if (Attribute == GetDashTimeAttribute())
 	{
 		NewValue = FMath::Max(NewValue, GetMinDashTime());
@@ -62,6 +68,14 @@ void UBasicAttributeSet::PreAttributeChange(const FGameplayAttribute& Attribute,
 	else if (Attribute == GetDashCooldownAttribute())
 	{
 		NewValue = FMath::Max(NewValue, GetMinDashCooldown());
+	}
+	else if (Attribute == GetDashDamageAttribute())
+	{
+		NewValue = FMath::Max(NewValue, 0.f);
+	}
+	else if (Attribute == GetDashKnockbackAttribute())
+	{
+		NewValue = FMath::Max(NewValue, 0.f);
 	}
 }
 
@@ -128,6 +142,12 @@ void UBasicAttributeSet::PostGameplayEffectExecute(const FGameplayEffectModCallb
 	} else if (Data.EvaluatedData.Attribute == GetDashCooldownAttribute())
 	{
 		SetDashCooldown(GetDashCooldown());
+	} else if (Data.EvaluatedData.Attribute == GetDashDamageAttribute())
+	{
+		SetDashDamage(GetDashDamage());
+	} else if (Data.EvaluatedData.Attribute == GetDashKnockbackAttribute())
+	{
+		SetDashKnockback(GetDashKnockback());
 	}
 }
 
