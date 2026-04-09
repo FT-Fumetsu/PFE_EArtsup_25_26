@@ -27,6 +27,8 @@ UBasicAttributeSet::UBasicAttributeSet()
 	MinDashCooldown = 0.5f;
 	DashDamage = 0.f;
 	DashKnockback = 0.f;
+	AttackSpeed = 0.f;
+	GlobalAttackDamage = 0.f;
 }
 
 void UBasicAttributeSet::PreAttributeChange(const FGameplayAttribute& Attribute, float& NewValue)
@@ -74,6 +76,14 @@ void UBasicAttributeSet::PreAttributeChange(const FGameplayAttribute& Attribute,
 		NewValue = FMath::Max(NewValue, 0.f);
 	}
 	else if (Attribute == GetDashKnockbackAttribute())
+	{
+		NewValue = FMath::Max(NewValue, 0.f);
+	}
+	else if (Attribute == GetAttackSpeedAttribute())
+	{
+		NewValue = FMath::Max(NewValue, -1.f);
+	}
+	else if (Attribute == GetGlobalAttackDamageAttribute())
 	{
 		NewValue = FMath::Max(NewValue, 0.f);
 	}
@@ -148,12 +158,19 @@ void UBasicAttributeSet::PostGameplayEffectExecute(const FGameplayEffectModCallb
 	} else if (Data.EvaluatedData.Attribute == GetDashKnockbackAttribute())
 	{
 		SetDashKnockback(GetDashKnockback());
+	} else if (Data.EvaluatedData.Attribute == GetAttackSpeedAttribute())
+	{
+		SetAttackSpeed(GetAttackSpeed());
+	}
+	else if (Data.EvaluatedData.Attribute == GetGlobalAttackDamageAttribute())
+	{
+		SetGlobalAttackDamage(GetGlobalAttackDamage());
 	}
 }
 
-void UBasicAttributeSet::PostAttributeChange(const FGameplayAttribute& Attribute, float OldValue, float NewValue)
+void UBasicAttributeSet::PostAttributeChange(const FGameplayAttribute& Attribute, const float OldValue, const float NewValue)
 {
-	Super::PostAttributeChange(Attribute, OldValue, NewValue);
+	Super::PostAttributeChange(Attribute, OldValue, NewValue); 
 	
 	if (Attribute == GetHealthAttribute() && NewValue <= 0.f)
 	{

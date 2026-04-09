@@ -68,6 +68,14 @@ public:
 	FGameplayAttributeData MaxArmor;
 	ATTRIBUTE_ACCESSORS_BASIC(UBasicAttributeSet, MaxArmor);
 	
+	UPROPERTY(BlueprintReadOnly, Category = "Attributes/Armor")
+	FGameplayAttributeData AttackSpeed;
+	ATTRIBUTE_ACCESSORS_BASIC(UBasicAttributeSet, AttackSpeed);
+	
+	UPROPERTY(BlueprintReadOnly, Category = "Attributes/Armor")
+	FGameplayAttributeData GlobalAttackDamage;
+	ATTRIBUTE_ACCESSORS_BASIC(UBasicAttributeSet, GlobalAttackDamage);
+	
 	// Dash Attributes
 	
 	UPROPERTY(BlueprintReadOnly, Category = "Attributes/Dash")
