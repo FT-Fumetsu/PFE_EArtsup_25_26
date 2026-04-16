@@ -83,6 +83,8 @@ void AGASCharacterBase::PossessedBy(AController* NewController)
 	{
 		AbilitySystemComponent->InitAbilityActorInfo(this, this);
 		GrantAbilities(StartingAbilities);
+		
+		InitializeAttributes();
 	}
 }
 
@@ -93,6 +95,32 @@ void AGASCharacterBase::OnRep_PlayerState()
 	if (AbilitySystemComponent)
 	{
 		AbilitySystemComponent->InitAbilityActorInfo(this, this);
+		InitializeAttributes();	
+	}
+}
+
+void AGASCharacterBase::InitializeAttributes()
+{
+	if (bAttributesInitialized) return;
+	if (!AbilitySystemComponent) return;
+	if (!DefaultStats) return;
+
+	// Si une classe d'AttributeSet est fournie, instancier et l'ajouter à l'ASC
+	if (BasicAttributeSetClass && !BasicAttributeSetInstance)	
+	{
+		BasicAttributeSetInstance = NewObject<UBasicAttributeSet>(this, BasicAttributeSetClass);
+		if (BasicAttributeSetInstance)
+		{
+			AbilitySystemComponent->AddAttributeSetSubobject(BasicAttributeSetInstance);
+		}
+	}
+
+	FGameplayEffectContextHandle EffectContext = AbilitySystemComponent->MakeEffectContext();
+	FGameplayEffectSpecHandle SpecHandle = AbilitySystemComponent->MakeOutgoingSpec(DefaultStats, 1.0f, EffectContext);
+	if (SpecHandle.IsValid() && SpecHandle.Data.IsValid())
+	{
+		AbilitySystemComponent->ApplyGameplayEffectSpecToSelf(*SpecHandle.Data.Get());
+		bAttributesInitialized = true;
 	}
 }
 
