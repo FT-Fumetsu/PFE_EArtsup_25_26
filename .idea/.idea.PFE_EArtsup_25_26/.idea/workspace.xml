@@ -11,7 +11,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6926267a-3cc3-457f-a100-886c1d2de2f1" name="Changes" comment="" />
+    <list default="true" id="6926267a-3cc3-457f-a100-886c1d2de2f1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PFE_EArtsup_25_26/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PFE_EArtsup_25_26/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Controllers/Enemies/Dummy/BP_DummyEliteSpawner.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Controllers/Enemies/Dummy/BP_DummyEliteSpawner.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Levels/DevLevels/Gymnase.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Levels/DevLevels/Gymnase.umap" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,7 +50,7 @@
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "git-widget-placeholder": "develop",
+    "git-widget-placeholder": "Feature/Deroulement-de-partie/Enemies-Spawner",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -160,6 +164,7 @@
       <workItem from="1776328983112" duration="171000" />
       <workItem from="1777277545075" duration="9185000" />
       <workItem from="1777371854653" duration="589000" />
+      <workItem from="1777372980712" duration="804000" />
     </task>
     <servers />
   </component>
