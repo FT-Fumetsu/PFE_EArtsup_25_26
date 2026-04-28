@@ -45,7 +45,7 @@ protected:
 	
 	bool bAttributesInitialized = false;
 	
-	UPROPERTY(EditAnywhere, BlueprintReadOnly)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Enemy Scaling")
 	UPDA_EnemyScaling* EnemyScalingData;
 	
 protected:
