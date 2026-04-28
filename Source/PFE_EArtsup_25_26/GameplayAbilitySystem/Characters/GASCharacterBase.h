@@ -37,7 +37,7 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "AbilitySystem")
 	TArray<TSubclassOf<UGameplayAbility>> StartingAbilities;
 	
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "AbilitySystem")
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "AbilitySystem")
 	UBasicAttributeSet* BasicAttributeSetInstance;
 	
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "AbilitySystem")
