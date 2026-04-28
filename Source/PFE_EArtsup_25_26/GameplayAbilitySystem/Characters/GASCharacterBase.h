@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
 #include "AbilitySystemInterface.h"
+#include "EnemyScaling/PDA_EnemyScaling.h"
 #include "AbilitySystemComponent.h"
 #include "GameplayTagContainer.h"
 #include "GameplayAbilitySpec.h"
@@ -43,6 +44,9 @@ protected:
 	TSubclassOf<UGameplayEffect> DefaultStats;
 	
 	bool bAttributesInitialized = false;
+	
+	UPROPERTY(EditAnywhere, BlueprintReadOnly)
+	UPDA_EnemyScaling* EnemyScalingData;
 	
 protected:
 	// Called when the game starts or when spawned
