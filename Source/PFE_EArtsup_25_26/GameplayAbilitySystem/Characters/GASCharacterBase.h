@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
 #include "AbilitySystemInterface.h"
+#include "EnemyScaling/PDA_EnemyScaling.h"
 #include "AbilitySystemComponent.h"
 #include "GameplayTagContainer.h"
 #include "GameplayAbilitySpec.h"
@@ -23,6 +24,9 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "AbilitySystem")
 	UAbilitySystemComponent* AbilitySystemComponent;
 	
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "AbilitySystem")
+	TSubclassOf<class UBasicAttributeSet> BasicAttributeSetClass;
+	
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "AbilitySystem")
 	class UBasicAttributeSet* BasicAttributeSet;
 	
@@ -32,6 +36,17 @@ public:
 protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "AbilitySystem")
 	TArray<TSubclassOf<UGameplayAbility>> StartingAbilities;
+	
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "AbilitySystem")
+	UBasicAttributeSet* BasicAttributeSetInstance;
+	
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "AbilitySystem")
+	TSubclassOf<UGameplayEffect> DefaultStats;
+	
+	bool bAttributesInitialized = false;
+	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Enemy Scaling")
+	UPDA_EnemyScaling* EnemyScalingData;
 	
 protected:
 	// Called when the game starts or when spawned
@@ -45,6 +60,9 @@ protected:
 	
 	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "Damage")
 	void HandleDeath();
+	
+	void InitializeAttributes();
+	
 
 public:	
 	// Called every frame
@@ -68,4 +86,5 @@ public:
 	void LoadAttributes(TMap<FGameplayAttribute, float> SavedAttributesMap) const;
 	
 	void OnRunSpeedChanged(const FOnAttributeChangeData& Data) const;
+	
 };
