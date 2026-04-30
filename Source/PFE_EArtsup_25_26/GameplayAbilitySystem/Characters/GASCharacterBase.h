@@ -6,6 +6,8 @@
 #include "GameFramework/Character.h"
 #include "AbilitySystemInterface.h"
 #include "EnemyScaling/PDA_EnemyScaling.h"
+#include "CharacterStats/PDA_CharacterStatistics.h"
+#include "CharacterStats/Str_CharacterStatistics.h"
 #include "AbilitySystemComponent.h"
 #include "GameplayTagContainer.h"
 #include "GameplayAbilitySpec.h"
@@ -32,6 +34,18 @@ public:
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Weapons")
 	bool hasWeaponEquipped = false;
+	
+	// Base data
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Stats")
+	UPDA_CharacterStatistics* StatsData;
+
+	// Override (POOL / SPAWN)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta=(ExposeOnSpawn=true), Category = "Stats")
+	FStr_CharacterStatistics StatsOverride;
+
+	// Final runtime stats
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Stats")
+	FStr_CharacterStatistics FinalStats;
 	
 protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "AbilitySystem")
@@ -63,6 +77,7 @@ protected:
 	
 	void InitializeAttributes();
 	
+	
 
 public:	
 	// Called every frame
@@ -86,5 +101,8 @@ public:
 	void LoadAttributes(TMap<FGameplayAttribute, float> SavedAttributesMap) const;
 	
 	void OnRunSpeedChanged(const FOnAttributeChangeData& Data) const;
+	
+	UFUNCTION(BlueprintCallable, Category = "Stats")
+	void MergeStats();
 	
 };
