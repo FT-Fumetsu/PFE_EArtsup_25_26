@@ -54,6 +54,11 @@ void AGASCharacterBase::BeginPlay()
 	{
 		AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(UBasicAttributeSet::GetRunSpeedAttribute()).AddUObject(this, &AGASCharacterBase::OnRunSpeedChanged);
 	}
+	
+	if (StatsData)
+	{
+		MergeStats();
+	}
 }
 
 // Called every frame
@@ -121,6 +126,39 @@ void AGASCharacterBase::InitializeAttributes()
 	{
 		AbilitySystemComponent->ApplyGameplayEffectSpecToSelf(*SpecHandle.Data.Get());
 		bAttributesInitialized = true;
+	}
+}
+
+void AGASCharacterBase::MergeStats()
+{
+	if (StatsData)
+	{
+		FinalStats = StatsData->CharacterStats;
+	}
+
+	if (StatsOverride.MaxHealthValue > 0.f)
+	{
+		FinalStats.MaxHealthValue = StatsOverride.MaxHealthValue;
+	}
+
+	if (StatsOverride.RunSpeedValue > 0.f)
+	{
+		FinalStats.RunSpeedValue = StatsOverride.RunSpeedValue;
+	}
+	
+	if (StatsOverride.DashDistanceValue > 0.f)
+	{
+		FinalStats.DashDistanceValue = StatsOverride.DashDistanceValue;
+	}
+	
+	if (StatsOverride.DashTimeValue > 0.f)
+	{
+		FinalStats.DashTimeValue = StatsOverride.DashTimeValue;
+	}
+	
+	if (StatsOverride.DashCooldownValue > 0.f)
+	{
+		FinalStats.DashCooldownValue = StatsOverride.DashCooldownValue;
 	}
 }
 
