@@ -13,15 +13,19 @@
   <component name="ChangeListManager">
     <list default="true" id="6926267a-3cc3-457f-a100-886c1d2de2f1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PFE_EArtsup_25_26/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PFE_EArtsup_25_26/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultGameplayTags.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultGameplayTags.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Attacks/Projectiles/BP_Projectile_GAS_Base.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Attacks/Projectiles/BP_Projectile_GAS_Base.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Controllers/Enemies/Dummy/BP_DummyMeleeEliteSpawner.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Controllers/Enemies/Dummy/BP_DummyMeleeEliteSpawner.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Controllers/Enemies/Dummy/BP_DummyRangedEliteSpawner.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Controllers/Enemies/Dummy/BP_DummyRangedEliteSpawner.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Controllers/Enemies/Dummy/BP_Dummy_Melee.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Controllers/Enemies/Dummy/BP_Dummy_Melee.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Controllers/Enemies/Dummy/BP_Dummy_Ranged.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Controllers/Enemies/Dummy/BP_Dummy_Ranged.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Controllers/Enemies/EnemyBase/BP_BaseEnemy_Base.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Controllers/Enemies/EnemyBase/BP_EnemyMelee_Base.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Controllers/Enemies/EnemyBase/BP_EnemyRanged_Base.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Controllers/Player/GS_Prototype.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Controllers/Player/GS_Prototype.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/GameplayAbilitySystem/Abilities/Attacks/GA_AutoSwordAttack.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/GameplayAbilitySystem/Abilities/Attacks/GA_AutoSwordAttack.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/ObjectPool/BP_EnemiesPoolManager.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/ObjectPool/BP_EnemiesPoolManager.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/WaveSystem/Str_SpawnRule.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/WaveSystem/Str_SpawnRule.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Controllers/Enemies/EnemyBase/BP_Enemy_Base.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Controllers/Enemies/EnemyBase/BP_Enemy_Base.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Controllers/Enemies/EnemyBase/BaseEnemy/BP_EnemyMelee_Base.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Controllers/Enemies/EnemyBase/BaseEnemy/BP_EnemyMelee_Base.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Controllers/Enemies/EnemyBase/BaseEnemy/BP_EnemyRanged_Base.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Controllers/Enemies/EnemyBase/BaseEnemy/BP_EnemyRanged_Base.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/GameplayAbilitySystem/Abilities/Projectiles/GA_SpawnProjectile_Base.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/GameplayAbilitySystem/Abilities/Projectiles/GA_SpawnProjectile_Base.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/GameplayAbilitySystem/Effects/Stats/GA_ApplyDefaultStats.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/GameplayAbilitySystem/Effects/Stats/GA_ApplyDefaultStats.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Levels/DevLevels/Gymnase.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Levels/DevLevels/Gymnase.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/PFE_EArtsup_25_26/GameplayAbilitySystem/Characters/GASCharacterBase.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/PFE_EArtsup_25_26/GameplayAbilitySystem/Characters/GASCharacterBase.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +61,7 @@
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "git-widget-placeholder": "Feature/Deroulement-de-partie/Enemy-Wave",
+    "git-widget-placeholder": "Feature/Attacks/Physical/Time-Projectile",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -173,6 +177,7 @@
       <workItem from="1777371854653" duration="589000" />
       <workItem from="1777372980712" duration="804000" />
       <workItem from="1777449832550" duration="782000" />
+      <workItem from="1777881896383" duration="2359000" />
     </task>
     <servers />
   </component>
