@@ -55,10 +55,7 @@ void AGASCharacterBase::BeginPlay()
 		AbilitySystemComponent->GetGameplayAttributeValueChangeDelegate(UBasicAttributeSet::GetRunSpeedAttribute()).AddUObject(this, &AGASCharacterBase::OnRunSpeedChanged);
 	}
 	
-	if (StatsData)
-	{
-		MergeStats();
-	}
+	MergeStats();
 }
 
 // Called every frame
@@ -145,6 +142,14 @@ void AGASCharacterBase::MergeStats()
 	{
 		FinalStats.RunSpeedValue = StatsOverride.RunSpeedValue;
 	}
+	
+	FinalStats.LifeStealValue = StatsOverride.LifeStealValue;
+	
+	FinalStats.ArmorValue = StatsOverride.ArmorValue;
+	
+	FinalStats.AttackSpeedValue = StatsOverride.AttackSpeedValue;
+	
+	FinalStats.AttackValue = StatsOverride.AttackValue;
 	
 	if (StatsOverride.DashDistanceValue > 0.f)
 	{
