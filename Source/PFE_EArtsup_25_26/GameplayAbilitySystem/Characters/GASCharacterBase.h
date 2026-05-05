@@ -46,6 +46,8 @@ public:
 	// Final runtime stats
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Stats")
 	FStr_CharacterStatistics FinalStats;
+
+	
 	
 protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "AbilitySystem")
@@ -104,5 +106,9 @@ public:
 	
 	UFUNCTION(BlueprintCallable, Category = "Stats")
 	void MergeStats();
+	
+	// Pooling
+	UFUNCTION(BlueprintCallable, Category = "Pooling")
+	void ResetForReuse();
 	
 };

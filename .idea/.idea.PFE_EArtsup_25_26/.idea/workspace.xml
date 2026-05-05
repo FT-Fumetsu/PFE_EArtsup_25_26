@@ -13,19 +13,108 @@
   <component name="ChangeListManager">
     <list default="true" id="6926267a-3cc3-457f-a100-886c1d2de2f1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PFE_EArtsup_25_26/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PFE_EArtsup_25_26/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Config/DefaultGameplayTags.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultGameplayTags.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Attacks/AOE_Attacks/BP_AOE_Base.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Attacks/AOE_Attacks/BP_AOE_Blast_Base.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Attacks/AOE_Attacks/BP_AOE_OverTime_Base.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Attacks/AOE_Attacks/PlaceHolder_Explosion/BP_Explosion.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Attacks/AOE_Attacks/PlaceHolder_Fire/BP_AOE_Fire.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Attacks/AOE_Attacks/PlaceHolder_LightningStrike/BP_AOE_LightningStrike.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Attacks/Projectiles/BP_Projectile_Base.uasset" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Attacks/Projectiles/BP_Projectile_GAS_Base.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Attacks/Projectiles/BP_Projectile_GAS_Base.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Controllers/Enemies/Dummy/BP_DummyMeleeEliteSpawner.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Controllers/Enemies/Dummy/BP_DummyMeleeEliteSpawner.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Attacks/Projectiles/BP_Projectile_GAS_Base_Child.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Attacks/Projectiles/BP_Projectile_GAS_Base_Child.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Attacks/Projectiles/GravityProjectiles/BP_GravityProjectile_Base.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Attacks/Projectiles/HomingOnClosestTargetProjectiles/BP_DarkEnergyProjectile.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Attacks/Projectiles/HomingOnClosestTargetProjectiles/BP_HomingToClosestTargetProjectile_Base.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Attacks/Projectiles/HomingOnSpecificTargetProjectiles/BP_HomingOnSpecificTargetProjectile_Base.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Attacks/Projectiles/LinearOnClosestTargetProjectiles/BP_LinearOnClosestTargetProjectile_Base.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Attacks/Projectiles/LinearOnToSpecificTargetProjectiles/BP_LinearOnToSpecificTargetProjectile_Base.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Attacks/Projectiles/LinearProjectiles/BP_LinearProjectile_Base.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Attacks/Projectiles/TimeProjectile/BP_TimeProjectile.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Attacks/Projectiles/TimeProjectile/BP_TimeProjectile.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Controllers/Enemies/Buddy/BP_DummySpawner.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Controllers/Enemies/Dummy/BP_DummyEliteSpawner.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Controllers/Enemies/Dummy/BP_DummyMeleeSpawner.uasset" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Controllers/Enemies/Dummy/BP_DummyRangedEliteSpawner.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Controllers/Enemies/Dummy/BP_DummyRangedEliteSpawner.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Controllers/Enemies/Dummy/BP_DummyRangedSpawner.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Controllers/Enemies/Dummy/BP_DummySpawner.uasset" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Controllers/Enemies/Dummy/BP_Dummy_Melee.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Controllers/Enemies/Dummy/BP_Dummy_Melee.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Controllers/Enemies/Dummy/BP_Dummy_Ranged.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Controllers/Enemies/Dummy/BP_Dummy_Ranged.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Controllers/Enemies/EnemyBase/BP_Enemy_Base.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Controllers/Enemies/EnemyBase/BP_Enemy_Base.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Controllers/Enemies/EnemyBase/BaseEnemy/BP_BaseEnemy_Base.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Controllers/Enemies/EnemyBase/BaseEnemy/BP_BaseEnemy_Base.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Controllers/Enemies/EnemyBase/BaseEnemy/BP_EnemyMelee_Base.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Controllers/Enemies/EnemyBase/BaseEnemy/BP_EnemyMelee_Base.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Controllers/Enemies/EnemyBase/BaseEnemy/BP_EnemyRanged_Base.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Controllers/Enemies/EnemyBase/BaseEnemy/BP_EnemyRanged_Base.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Controllers/Enemies/EnemyBase/Boss/BP_Boss.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Controllers/Enemies/EnemyBase/Boss/BP_Boss.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Controllers/GM_Prototype.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Controllers/GM_Prototype.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Controllers/Player/BP_Player.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Controllers/Player/BP_Player.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Controllers/Player/GS_Prototype.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Controllers/Player/GS_Prototype.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Controllers/Player/Input/Actions/IA_GauntletsAttack.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Controllers/Player/Input/Actions/IA_GunAttack.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Controllers/Player/Input/Actions/IA_Jump.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Controllers/Player/Input/Actions/IA_MouseLook.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Controllers/Player/Input/Actions/IA_SwordAttack.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Controllers/Player/Input/Actions/IA_SwordChargeAttack.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Controllers/Player/Input/IMC_Default.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Controllers/Player/Input/IMC_Default.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/DataTables/PowerUps/DT_PowerUps.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Enums/PowerUps/E_EffectType.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Enums/PowerUps/E_ProjectileType.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Experience/BP_XPCoin.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Experience/BP_XPCoin.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/GameplayAbilitySystem/Abilities/Attacks/EnemiesAttacks/GA_BaseEnemyMeleeAttack.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/GameplayAbilitySystem/Abilities/Attacks/EnemiesAttacks/GA_BaseEnemyMeleeAttack.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/GameplayAbilitySystem/Abilities/Attacks/EnemiesAttacks/GA_EnemyShootProjectile_Base.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/GameplayAbilitySystem/Abilities/Attacks/EnemiesAttacks/GA_EnemyShootProjectile_Base.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/GameplayAbilitySystem/Abilities/Attacks/GA_AutoSwordAttack.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/GameplayAbilitySystem/Abilities/Attacks/GA_AutoSwordAttack.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/GameplayAbilitySystem/Abilities/Attacks/GA_MeleeAttack_Base.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/GameplayAbilitySystem/Abilities/Attacks/GA_MeleeAttack_Gauntlets.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/GameplayAbilitySystem/Abilities/Attacks/GA_MeleeAttack_Gauntlets_Enemy.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/GameplayAbilitySystem/Abilities/Damage/GA_Death.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/GameplayAbilitySystem/Abilities/Damage/GA_Death.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/GameplayAbilitySystem/Abilities/Dash/GA_Dash.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/GameplayAbilitySystem/Abilities/Dash/GA_Dash.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/GameplayAbilitySystem/Abilities/Projectiles/GA_SpawnProjectile_Base.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/GameplayAbilitySystem/Abilities/Projectiles/GA_SpawnProjectile_Base.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/GameplayAbilitySystem/Effects/Stats/GA_ApplyDefaultStats.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/GameplayAbilitySystem/Effects/Stats/GA_ApplyDefaultStats.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/GameplayAbilitySystem/Abilities/ScalingStats/GA_ScaleStatistics.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/GameplayAbilitySystem/Abilities/ScalingStats/GA_ScaleStatistics.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/GameplayAbilitySystem/Abilities/Weapons/GA_EquipWeapon.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/GameplayAbilitySystem/EffectActors/BP_EffectArea_Base.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/GameplayAbilitySystem/EffectActors/BP_EffectArea_Base.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/GameplayAbilitySystem/EffectActors/BP_EquipProjectiles.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/GameplayAbilitySystem/Effects/GE_DamageOverTime_Infinite.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/GameplayAbilitySystem/Effects/GE_Damage_Instant.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/GameplayAbilitySystem/Effects/GE_DashCooldown.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/GameplayAbilitySystem/Effects/GE_Death.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/GameplayAbilitySystem/Effects/GE_ExperienceGain.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/GameplayAbilitySystem/Effects/GE_LoadHealth.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/GameplayAbilitySystem/Effects/Stats/GE_DefaultStats.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/GameplayAbilitySystem/Effects/Stats/GE_EnemyScalingStatistics.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/GameplayAbilitySystem/Effects/Stats/GE_EnemyScalingStatistics.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/GameplayAbilitySystem/Effects/Stats/PDA_DefaultStats.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/GameplayAbilitySystem/Effects/Stats/Str_DefaultStats.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/GameplayAbilitySystem/Interfaces/BPI_Targetting.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/GameplayAbilitySystem/Interfaces/BPI_Targetting.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Interactables/Chests/BP_Chest.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Interactables/Chests/BP_Chest.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/ObjectPool/BP_EnemiesPoolManager.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/ObjectPool/BP_PoolManager.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/ObjectPool/BP_PrototypeEnemySpawn.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/ObjectPool/Enemy/BP_EnemiesPoolManager.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/ObjectPool/Enemy/BP_EnemiesPoolManager.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Powerups/BP_BaseUpgrade.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Powerups/BP_BaseUpgrade.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Powerups/BP_PowerupChoiceManager.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Powerups/BP_PowerupChoiceManager.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/SaveGame/BPI_SaveGame.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/SaveGame/GI_Global.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/SaveGame/GI_Global.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/SaveGame/SG_Test.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/SaveGame/Str_EnemySave.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/SaveGame/Str_PlayerSave.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Structures/PowerUps/Str_EffectsType.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/WaveSystem/BP_GameFlowManager.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/WaveSystem/BP_GameFlowManager.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Weapons/AC_WeaponsManagerComponent.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Weapons/BP_Weapon_Base.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Weapons/BP_Weapon_Gauntlets.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Weapons/BP_Weapon_Gun.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Weapons/BP_Weapon_Sword.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Weapons/Bp_EquipWeapon_Area.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Weapons/Data/Str_WeaponConfig.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/WidgetBlueprint(WBP)/Menus/MainMenus/WBP_ChooseFile.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/WidgetBlueprint(WBP)/Menus/MainMenus/WBP_MainMenu.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/WidgetBlueprint(WBP)/Menus/MainMenus/WBP_MainMenu.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/WidgetBlueprint(WBP)/Menus/PauseMenu/WBP_PauseMenu.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/WidgetBlueprint(WBP)/Menus/PauseMenu/WBP_PauseMenu.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Levels/DevLevels/Gymnase-LDD.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Levels/DevLevels/Gymnase-LDD.umap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Dynamic/Levels/DevLevels/Gymnase.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Levels/DevLevels/Gymnase.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Levels/DevLevels/Module_Level.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Levels/DevLevels/Module_Level.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Levels/MainLevels/LobbyLevel.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Levels/MainLevels/LobbyLevel.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Levels/PrototypeMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Levels/PrototypeMap.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Static/DefaultUE5Characters/Mannequins/Rigs/CR_Mannequin_FootIK.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Static/DefaultUE5Characters/Mannequins/Rigs/CR_Mannequin_FootIK.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/PFE_EArtsup_25_26/GameplayAbilitySystem/Characters/GASCharacterBase.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/PFE_EArtsup_25_26/GameplayAbilitySystem/Characters/GASCharacterBase.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/PFE_EArtsup_25_26/GameplayAbilitySystem/Characters/GASCharacterBase.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/PFE_EArtsup_25_26/GameplayAbilitySystem/Characters/GASCharacterBase.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +150,7 @@
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "git-widget-placeholder": "Feature/Attacks/Physical/Time-Projectile",
+    "git-widget-placeholder": "Clean-Code&&Fix-Bugs",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -178,6 +267,8 @@
       <workItem from="1777372980712" duration="804000" />
       <workItem from="1777449832550" duration="782000" />
       <workItem from="1777881896383" duration="2359000" />
+      <workItem from="1777887486158" duration="4839000" />
+      <workItem from="1777968144005" duration="5049000" />
     </task>
     <servers />
   </component>

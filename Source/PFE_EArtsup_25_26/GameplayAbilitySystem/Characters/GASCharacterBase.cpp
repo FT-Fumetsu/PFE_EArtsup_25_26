@@ -167,6 +167,66 @@ void AGASCharacterBase::MergeStats()
 	}
 }
 
+void AGASCharacterBase::ResetForReuse()
+{
+	UE_LOG(LogTemp, Warning, TEXT("=== ResetForReuse called on %s ==="), *GetName());
+
+	if (!AbilitySystemComponent)
+	{
+		return;
+	}
+
+	// 1. Stop abilities
+	AbilitySystemComponent->CancelAllAbilities();
+
+	// 2. Remove Gameplay Effects
+	AbilitySystemComponent->RemoveActiveEffects(FGameplayEffectQuery());
+
+	// 3. Remove Gameplay Tags
+	FGameplayTagContainer OwnedTags;
+	AbilitySystemComponent->GetOwnedGameplayTags(OwnedTags);
+
+	for (const FGameplayTag& Tag : OwnedTags)
+	{
+		AbilitySystemComponent->SetLooseGameplayTagCount(Tag, 0);
+	}
+
+	// Sécurité : retirer explicitement Dead
+	FGameplayTag DeadTag = FGameplayTag::RequestGameplayTag(FName("State.Dead"));
+	AbilitySystemComponent->RemoveLooseGameplayTag(DeadTag);
+
+	// 4. Reset attributes
+	bAttributesInitialized = false;
+	InitializeAttributes();
+
+	// 5. Reset abilities
+	AbilitySystemComponent->ClearAllAbilities();
+	GrantAbilities(StartingAbilities);
+
+	// 6. Reset physique
+	GetMesh()->SetSimulatePhysics(false);
+	GetMesh()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+
+	GetCapsuleComponent()->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
+
+	GetCharacterMovement()->StopMovementImmediately();
+	GetCharacterMovement()->SetMovementMode(MOVE_Walking);
+
+	// 7. Reset vitesse
+	if (BasicAttributeSet)
+	{
+		GetCharacterMovement()->MaxWalkSpeed = BasicAttributeSet->GetRunSpeed();
+	}
+
+	// 8. Reset flags
+	hasWeaponEquipped = false;
+
+	// 9. Refresh
+	SendAbilitiesChangedEvent();
+
+	UE_LOG(LogTemp, Warning, TEXT("=== ResetForReuse finished on %s ==="), *GetName());
+}
+
 TArray<FGameplayAbilitySpecHandle> AGASCharacterBase::GrantAbilities(
 	TArray<TSubclassOf<UGameplayAbility>> AbilitiesToGrant)
 {
@@ -174,6 +234,8 @@ TArray<FGameplayAbilitySpecHandle> AGASCharacterBase::GrantAbilities(
 	{
 		return TArray<FGameplayAbilitySpecHandle>();
 	}
+	
+	AbilitySystemComponent->ClearAllAbilities();
 	
 	TArray<FGameplayAbilitySpecHandle> AbilityHandles;
 	
