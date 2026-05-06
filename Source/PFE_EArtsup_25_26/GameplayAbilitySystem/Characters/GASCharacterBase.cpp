@@ -235,7 +235,7 @@ TArray<FGameplayAbilitySpecHandle> AGASCharacterBase::GrantAbilities(
 		return TArray<FGameplayAbilitySpecHandle>();
 	}
 	
-	AbilitySystemComponent->ClearAllAbilities();
+	//AbilitySystemComponent->ClearAllAbilities();
 	
 	TArray<FGameplayAbilitySpecHandle> AbilityHandles;
 	
