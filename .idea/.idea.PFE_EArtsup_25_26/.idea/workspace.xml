@@ -13,12 +13,8 @@
   <component name="ChangeListManager">
     <list default="true" id="6926267a-3cc3-457f-a100-886c1d2de2f1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PFE_EArtsup_25_26/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PFE_EArtsup_25_26/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Attacks/Projectiles/BP_Projectile_GAS_Base.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Attacks/Projectiles/BP_Projectile_GAS_Base.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Attacks/Projectiles/BP_Projectile_GAS_Base_Child.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Attacks/Projectiles/BP_Projectile_GAS_Base_Child.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Attacks/Projectiles/IceProjectile/BP_IceProjectile.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Attacks/Projectiles/IceProjectile/BP_IceProjectile.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/GameplayAbilitySystem/Abilities/Attacks/GA_AutoSwordAttack.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/GameplayAbilitySystem/Abilities/Attacks/GA_AutoSwordAttack.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/GameplayAbilitySystem/Abilities/Projectiles/GA_SpawnProjectile_Base.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/GameplayAbilitySystem/Abilities/Projectiles/GA_SpawnProjectile_Base.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/WaveSystem/BP_GameFlowManager.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/WaveSystem/BP_GameFlowManager.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Controllers/Enemies/EnemyBase/BaseEnemy/BP_BaseEnemy_Base.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Controllers/Enemies/EnemyBase/BaseEnemy/BP_BaseEnemy_Base.uasset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,7 +170,7 @@
       <workItem from="1777887486158" duration="4839000" />
       <workItem from="1777968144005" duration="5049000" />
       <workItem from="1777984240380" duration="1586000" />
-      <workItem from="1778054685533" duration="846000" />
+      <workItem from="1778054685533" duration="1459000" />
     </task>
     <servers />
   </component>
