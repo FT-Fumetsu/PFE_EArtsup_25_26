@@ -15,7 +15,7 @@ struct FStr_CharacterStatistics
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Character Stats")
 	float RunSpeedValue = 500.f;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Character Stats")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Character Stats") 
 	float LifeStealValue = 0.f;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Character Stats")
