@@ -103,6 +103,43 @@ void UBasicAttributeSet::PostGameplayEffectExecute(const FGameplayEffectModCallb
 			HitReactionTagContainer.AddTag(FGameplayTag::RequestGameplayTag("GameplayAbility.HitReaction"));
 			GetOwningAbilitySystemComponent()->TryActivateAbilitiesByTag(HitReactionTagContainer);
 		}
+		
+		if (GetHealth() <= 0.f)
+		{
+			UAbilitySystemComponent* ASC = GetOwningAbilitySystemComponent();
+			
+			if (!ASC)
+			{
+				return;
+			}
+			
+			const FGameplayTag ZaWarudoTag = FGameplayTag::RequestGameplayTag("Upgrade.ZaWarudo");
+			
+			const FGameplayTag ZaWarudoUsedTag = FGameplayTag::RequestGameplayTag("State.LastStandUsed");
+			
+			const bool bHasZaWarudo = ASC->HasMatchingGameplayTag(ZaWarudoTag);
+			
+			const bool bHasUsedZaWarudo = ASC->HasMatchingGameplayTag(ZaWarudoUsedTag);
+			
+			if (bHasZaWarudo && !bHasUsedZaWarudo)
+			{
+				SetHealth(1.f);
+				
+				ASC->AddLooseGameplayTag(ZaWarudoUsedTag);
+				
+				FGameplayEventData Payload;
+				Payload.EventTag = FGameplayTag::RequestGameplayTag("Event.TimeControl.ZaWarudo");
+				
+				ASC->HandleGameplayEvent(Payload.EventTag, &Payload);
+				
+				return;
+			}
+			
+			FGameplayTagContainer DeathAbilityTagContainer;
+			DeathAbilityTagContainer.AddTag(FGameplayTag::RequestGameplayTag("GameplayAbility.Death"));
+			GetOwningAbilitySystemComponent()->TryActivateAbilitiesByTag(DeathAbilityTagContainer);
+		}
+		
 	} else if (Data.EvaluatedData.Attribute == GetExperienceAttribute())
 	{
 		float CurrentXP = GetExperience();
@@ -165,17 +202,5 @@ void UBasicAttributeSet::PostGameplayEffectExecute(const FGameplayEffectModCallb
 	else if (Data.EvaluatedData.Attribute == GetGlobalAttackDamageAttribute())
 	{
 		SetGlobalAttackDamage(GetGlobalAttackDamage());
-	}
-}
-
-void UBasicAttributeSet::PostAttributeChange(const FGameplayAttribute& Attribute, const float OldValue, const float NewValue)
-{
-	Super::PostAttributeChange(Attribute, OldValue, NewValue); 
-	
-	if (Attribute == GetHealthAttribute() && NewValue <= 0.f)
-	{
-		FGameplayTagContainer DeathAbilityTagContainer;
-		DeathAbilityTagContainer.AddTag(FGameplayTag::RequestGameplayTag("GameplayAbility.Death"));
-		GetOwningAbilitySystemComponent()->TryActivateAbilitiesByTag(DeathAbilityTagContainer);
 	}
 }
