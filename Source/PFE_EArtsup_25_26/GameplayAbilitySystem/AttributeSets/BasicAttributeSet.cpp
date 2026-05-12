@@ -180,7 +180,7 @@ void UBasicAttributeSet::PostGameplayEffectExecute(const FGameplayEffectModCallb
 	} else if (Data.EvaluatedData.Attribute == GetArmorAttribute())
 	{
 		SetArmor(GetArmor());
-	} else if (Data.EvaluatedData.Attribute == GetDashDistanceAttribute())
+	} else if (Data.EvaluatedData.Attribute == GetDashDistanceAttribute())	
 	{
 		SetDashDistance(GetDashDistance());
 	} else if (Data.EvaluatedData.Attribute == GetDashTimeAttribute())
