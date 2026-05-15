@@ -12,27 +12,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6926267a-3cc3-457f-a100-886c1d2de2f1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Powerups/TimeControlUpgrade/EventHorizon/BP_EventHorizonUpgrade.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Powerups/TimeControlUpgrade/EventHorizon/GE_EventHorizon.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Powerups/TimeControlUpgrade/Singularity/BP_SingularityUpgrade.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Powerups/TimeControlUpgrade/Singularity/GE_SingularityGrantTag.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Powerups/TimeControlUpgrade/TimeDilatation/GE_TimeDilatationAreaRadius.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultGameplayTags.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultGameplayTags.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Attacks/Projectiles/BlackHole/BP_SpawnBlackHole.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Attacks/Projectiles/BlackHole/BP_SpawnBlackHole.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Attacks/Projectiles/Boomerang/GA_SpawnBoomerangProjectile.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Attacks/Projectiles/Boomerang/GA_SpawnBoomerangProjectile.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Attacks/Projectiles/BouncingProjectile/GA_SpawnBouncingProjectile.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Attacks/Projectiles/BouncingProjectile/GA_SpawnBouncingProjectile.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Attacks/Projectiles/TimeProjectile/BP_TimeProjectile.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Attacks/Projectiles/TimeProjectile/BP_TimeProjectile.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Controllers/Player/BP_Player.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Controllers/Player/BP_Player.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/GameplayAbilitySystem/Abilities/Projectiles/GA_SpawnProjectile_Base.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/GameplayAbilitySystem/Abilities/Projectiles/GA_SpawnProjectile_Base.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/GameplayAbilitySystem/EffectActors/BP_EffectArea_Base.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/GameplayAbilitySystem/EffectActors/BP_EffectArea_Base.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Powerups/BP_BaseUpgrade.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Powerups/BP_BaseUpgrade.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Powerups/BP_PowerupChoiceManager.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Powerups/BP_PowerupChoiceManager.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Powerups/TimeControlUpgrade/TimeDilatation/BP_TimeDilatationUpgrade.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Powerups/TimeControlUpgrade/TimeDilatation/BP_TimeDilatationUpgrade.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Powerups/TimeControlUpgrade/ZaWarudo/BP_ZaWarudo.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Powerups/TimeControlUpgrade/ZaWarudo/BP_ZaWarudo.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Structures/PowerUps/Str_PowerUps.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Structures/PowerUps/Str_PowerUps.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/WidgetBlueprint(WBP)/Chests/WBP_Chest.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/WidgetBlueprint(WBP)/Chests/WBP_Chest.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/WidgetBlueprint(WBP)/Chests/WBP_ChestChoiceWidget.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/WidgetBlueprint(WBP)/Chests/WBP_ChestChoiceWidget.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/WidgetBlueprint(WBP)/HUD/WBP_Ability.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/WidgetBlueprint(WBP)/HUD/WBP_Ability.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/WidgetBlueprint(WBP)/HUD/WBP_Timer.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/WidgetBlueprint(WBP)/HUD/WBP_Timer.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/WidgetBlueprint(WBP)/Menus/MainMenus/GM_MainMenu.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/WidgetBlueprint(WBP)/Menus/MainMenus/GM_MainMenu.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/WidgetBlueprint(WBP)/Menus/MainMenus/WBP_Credits.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/WidgetBlueprint(WBP)/Menus/MainMenus/WBP_Credits.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/WidgetBlueprint(WBP)/Menus/MainMenus/WBP_MainMenu.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/WidgetBlueprint(WBP)/Menus/MainMenus/WBP_MainMenu.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/WidgetBlueprint(WBP)/Menus/MainMenus/WBP_Settings.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/WidgetBlueprint(WBP)/Menus/MainMenus/WBP_Settings.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/WidgetBlueprint(WBP)/Menus/PauseMenu/WBP_PauseMenu.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/WidgetBlueprint(WBP)/Menus/PauseMenu/WBP_PauseMenu.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Levels/PrototypeMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Levels/PrototypeMap.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/WidgetBlueprint(WBP)/Prototype/WBP_PressF.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/WidgetBlueprint(WBP)/Prototype/WBP_PressF.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Levels/MenuLevels/TitleScreen_Scene.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Levels/MenuLevels/TitleScreen_Scene.umap" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +37,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Intermediate/Build/Win64/UnrealEditor/Inc/PFE_EArtsup_25_26/UHT/PDA_EnemyScaling.generated.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../../../../../Program Files/Epic Games/UE_5.6/Engine/Source/Runtime/Engine/Classes/GameFramework/GameModeBase.h" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
@@ -66,9 +57,13 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "git-widget-placeholder": "Feature/Upgrade/TimeControl/Singularity",
+    "cidr.known.project.marker": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "UI",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -200,6 +195,7 @@
       <workItem from="1778495623834" duration="4031000" />
       <workItem from="1778506089314" duration="1490000" />
       <workItem from="1778573209015" duration="2566000" />
+      <workItem from="1778842014909" duration="116000" />
     </task>
     <servers />
   </component>
