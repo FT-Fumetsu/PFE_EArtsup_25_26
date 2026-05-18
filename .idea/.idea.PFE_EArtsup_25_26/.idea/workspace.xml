@@ -12,18 +12,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6926267a-3cc3-457f-a100-886c1d2de2f1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PFE_EArtsup_25_26/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PFE_EArtsup_25_26/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/WidgetBlueprint(WBP)/Chests/WBP_Chest.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/WidgetBlueprint(WBP)/Chests/WBP_Chest.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/WidgetBlueprint(WBP)/Chests/WBP_ChestChoiceWidget.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/WidgetBlueprint(WBP)/Chests/WBP_ChestChoiceWidget.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/WidgetBlueprint(WBP)/HUD/WBP_Ability.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/WidgetBlueprint(WBP)/HUD/WBP_Ability.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/WidgetBlueprint(WBP)/HUD/WBP_Timer.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/WidgetBlueprint(WBP)/HUD/WBP_Timer.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/WidgetBlueprint(WBP)/Menus/MainMenus/GM_MainMenu.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/WidgetBlueprint(WBP)/Menus/MainMenus/GM_MainMenu.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/WidgetBlueprint(WBP)/Menus/MainMenus/WBP_Credits.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/WidgetBlueprint(WBP)/Menus/MainMenus/WBP_Credits.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/WidgetBlueprint(WBP)/Menus/MainMenus/WBP_MainMenu.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/WidgetBlueprint(WBP)/Menus/MainMenus/WBP_MainMenu.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/WidgetBlueprint(WBP)/Menus/MainMenus/WBP_Settings.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/WidgetBlueprint(WBP)/Menus/MainMenus/WBP_Settings.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/WidgetBlueprint(WBP)/Menus/PauseMenu/WBP_PauseMenu.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/WidgetBlueprint(WBP)/Menus/PauseMenu/WBP_PauseMenu.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/WidgetBlueprint(WBP)/Prototype/WBP_PressF.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/WidgetBlueprint(WBP)/Prototype/WBP_PressF.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Levels/MenuLevels/TitleScreen_Scene.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Levels/MenuLevels/TitleScreen_Scene.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Levels/DevLevels/Blockout-London.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Levels/DevLevels/Blockout-London.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Levels/DevLevels/Blockout-London_Duplicated.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Levels/DevLevels/Blockout-London_Duplicated.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/VFX/DashTrail.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/VFX/Fire.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/VFX/Fire_Enviro/FireEnvironment.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/VFX/Fire_Enviro/FireEnvironment1.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Static/VFX/VFX_final/AOE/Trainee/DashTrail.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Static/VFX/VFX_final/AOE/Trainee/DashTrail.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Static/VFX/VFX_final/AOE/Trainee/Fire.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Static/VFX/VFX_final/AOE/Trainee/Fire.uasset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +64,7 @@
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "cidr.known.project.marker": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "UI",
+    "git-widget-placeholder": "Feature/Option-Menu/Volume-Settings",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -196,6 +197,8 @@
       <workItem from="1778506089314" duration="1490000" />
       <workItem from="1778573209015" duration="2566000" />
       <workItem from="1778842014909" duration="116000" />
+      <workItem from="1779097689085" duration="413000" />
+      <workItem from="1779098466626" duration="1097000" />
     </task>
     <servers />
   </component>
