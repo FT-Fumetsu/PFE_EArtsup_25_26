@@ -12,24 +12,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6926267a-3cc3-457f-a100-886c1d2de2f1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Controllers/GM_Prototype.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Controllers/GM_Prototype.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Controllers/Player/BP_Player.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Controllers/Player/BP_Player.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Controllers/Player/PC_BaseController.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Controllers/Player/PC_BaseController.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/SaveGame/GI_Global.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/SaveGame/GI_Global.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/WidgetBlueprint(WBP)/Menus/MainMenus/WBP_MainMenu.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/WidgetBlueprint(WBP)/Menus/MainMenus/WBP_MainMenu.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/WidgetBlueprint(WBP)/Menus/MainMenus/WBP_Settings.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/WidgetBlueprint(WBP)/Menus/MainMenus/WBP_Settings.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/WidgetBlueprint(WBP)/Menus/PauseMenu/WBP_PauseMenu.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/WidgetBlueprint(WBP)/Menus/PauseMenu/WBP_PauseMenu.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Static/07_SFX/SFX/SFX_04_02_lucy.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Static/07_SFX/SFX/SFX_04_02_lucy.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Static/07_SFX/SFX/SFX_04_03_lucy.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Static/07_SFX/SFX/SFX_04_03_lucy.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Static/07_SFX/SFX/SFX_05_feu.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Static/07_SFX/SFX/SFX_05_feu.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Static/07_SFX/SFX/SFX_06_bois_brule.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Static/07_SFX/SFX/SFX_06_bois_brule.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Static/07_SFX/SFX/SFX_07_click.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Static/07_SFX/SFX/SFX_07_click.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Static/07_SFX/SFX/SFX_08_projectiles.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Static/07_SFX/SFX/SFX_08_projectiles.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Static/07_SFX/SFX/SFX_09_laser.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Static/07_SFX/SFX/SFX_09_laser.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Static/07_SFX/SFX/SFX_10_grenade.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Static/07_SFX/SFX/SFX_10_grenade.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Static/07_SFX/SFX/SFX_11_trou_noir.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Static/07_SFX/SFX/SFX_11_trou_noir.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Static/07_SFX/SFX/SFX_12_lames_hit.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Static/07_SFX/SFX/SFX_12_lames_hit.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Static/07_SFX/SFX/SFX_12_lames_tourbillon_hit.uasset" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,28 +40,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;C/C++ Project.PFE_EArtsup_25_26.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Feature/Option-Menu/Volume-Settings&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;SolutionBuilderGeneralOptionsPage&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "C/C++ Project.PFE_EArtsup_25_26.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "cidr.known.project.marker": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "Feature/Option-Menu/Graphisms",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "SolutionBuilderGeneralOptionsPage",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="C/C++ Project.PFE_EArtsup_25_26">
     <configuration name="PFE_EArtsup_25_26" type="CppProject" factoryName="C++ Project">
       <configuration_1 setup="1">
@@ -205,6 +188,7 @@
       <workItem from="1779097689085" duration="413000" />
       <workItem from="1779098466626" duration="1097000" />
       <workItem from="1779106526324" duration="957000" />
+      <workItem from="1779115538665" duration="820000" />
     </task>
     <servers />
   </component>
