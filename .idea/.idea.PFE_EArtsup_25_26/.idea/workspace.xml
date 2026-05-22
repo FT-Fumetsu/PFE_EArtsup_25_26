@@ -13,13 +13,16 @@
   <component name="ChangeListManager">
     <list default="true" id="6926267a-3cc3-457f-a100-886c1d2de2f1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PFE_EArtsup_25_26/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PFE_EArtsup_25_26/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Attacks/Projectiles/TimeProjectile/BP_TimeProjectile.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Attacks/Projectiles/TimeProjectile/BP_TimeProjectile.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Controllers/GM_Prototype.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Controllers/GM_Prototype.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Controllers/Player/BP_Player.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Controllers/Player/BP_Player.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Experience/BP_XPCoin.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Experience/BP_XPCoin.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/GameplayAbilitySystem/Abilities/LevelUp/GA_LevelUpListener.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/GameplayAbilitySystem/Abilities/LevelUp/GA_LevelUpListener.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Powerups/BP_PowerupChoiceManager.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Powerups/BP_PowerupChoiceManager.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/WidgetBlueprint(WBP)/Chests/WBP_ChestChoiceWidget.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/WidgetBlueprint(WBP)/Chests/WBP_ChestChoiceWidget.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Levels/DevLevels/PrototypeMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Levels/DevLevels/PrototypeMap.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Controllers/Player/GS_Prototype.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/Controllers/Player/GS_Prototype.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/GameplayAbilitySystem/Abilities/ScalingStats/GA_ScaleStatistics.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/GameplayAbilitySystem/Abilities/ScalingStats/GA_ScaleStatistics.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/ObjectPool/Enemy/BP_EnemiesPoolManager.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/ObjectPool/Enemy/BP_EnemiesPoolManager.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/ObjectPool/Enemy/BP_PrototypeEnemySpawn.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/ObjectPool/Enemy/BP_PrototypeEnemySpawn.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Blueprints/WaveSystem/BP_GameFlowManager.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Blueprints/WaveSystem/BP_GameFlowManager.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Levels/DevLevels/Blockout-London.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Levels/DevLevels/Blockout-London.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Dynamic/Levels/DevLevels/Blockout-London_Duplicated.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Dynamic/Levels/DevLevels/Blockout-London_Duplicated.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/PFE_EArtsup_25_26/GameplayAbilitySystem/AttributeSets/BasicAttributeSet.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/PFE_EArtsup_25_26/GameplayAbilitySystem/AttributeSets/BasicAttributeSet.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +62,7 @@
     &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
     &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Feature/Time-Control/Stele&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Integration/Dev/Blockout&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -204,6 +207,8 @@
       <workItem from="1779350905957" duration="934000" />
       <workItem from="1779360732693" duration="349000" />
       <workItem from="1779365612103" duration="800000" />
+      <workItem from="1779372068887" duration="330000" />
+      <workItem from="1779436912835" duration="925000" />
     </task>
     <servers />
   </component>
