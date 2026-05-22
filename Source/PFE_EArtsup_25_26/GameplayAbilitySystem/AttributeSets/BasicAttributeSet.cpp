@@ -12,7 +12,7 @@ UBasicAttributeSet::UBasicAttributeSet()
 	Health = 100;
 	MaxHealth = 100;
 	Experience = 0.f;
-	MaxExperience = 100.f;
+	MaxExperience = 100.f; 
 	Levels = 0;
 	RunSpeed = 500.f;
 	LifeSteal = 0.f;
