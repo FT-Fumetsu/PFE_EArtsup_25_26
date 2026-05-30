@@ -19,7 +19,7 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Enemy Scaling")
 	float HealthScalingValue;
 	
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Enemy Scaling")
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Enemy Scaling") 
 	float DamageScalingValue;
 	
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Enemy Scaling")
